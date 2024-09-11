@@ -5,9 +5,7 @@ from dotenv import load_dotenv
 import os
 import json
 
-from config import *
-
-config = create_config()
+from config import Config
 
 class Bot(commands.Bot):
     def __init__(self):
@@ -25,4 +23,4 @@ class Bot(commands.Bot):
 
 bot = Bot()
 
-bot.run(config["BOT_TOKEN"])
+bot.run(Config.get("BOT_TOKEN"))

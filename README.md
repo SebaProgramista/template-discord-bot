@@ -33,33 +33,33 @@ Logging: Integrated logging for debugging and monitoring purposes.
 -->
 
 ## Installation
-<h3>1. Clone the Repository</h3>
+<h4>1. Clone the Repository</h4>
 Clone this repository to your local machine:
 
 ```
 git clone https://github.com/SebaProgramista/template-discord-bot
 cd template-discord-bot
 ```
-<h3>2. Create a Virtual Environment</h3>
+<h4>2. Create a Virtual Environment</h4>
 It is recommended to create a virtual environment to manage dependencies:
 
 ```
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 ```
-<h3>3. Install Dependencies</h3>
+<h4>3. Install Dependencies</h4>
 Install the required dependencies using pip:
 
 ```
 pip install -r requirements.txt
 ```
-<h3>4. Set Up Environment Variables</h3>
+<h4>4. Set Up Environment Variables</h4>
 Create a .env file in the root directory and add your Discord bot token:
 
 ```
 BOT_TOKEN=your-discord-bot-token
 ```
-<h3>5. Run the Bot</h3>
+<h4>5. Run the Bot</h4>
 Start the bot by running:
 
 ```

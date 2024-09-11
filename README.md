@@ -22,6 +22,7 @@ A simple, customizable template for creating a Discord bot using Python and disc
 </p>
 
 ## Features
+soon
 <!--
 Command Handling: Easy-to-use command handler for adding and managing bot commands.
 Event Handling: Simple event handler to respond to various Discord events.
@@ -32,7 +33,39 @@ Logging: Integrated logging for debugging and monitoring purposes.
 -->
 
 ## Installation
-soon
+<h3>1. Clone the Repository</h3>
+Clone this repository to your local machine:
+
+```
+git clone https://github.com/SebaProgramista/template-discord-bot
+cd template-discord-bot
+```
+<h3>2. Create a Virtual Environment</h3>
+It is recommended to create a virtual environment to manage dependencies:
+
+```
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
+<h3>3. Install Dependencies</h3>
+Install the required dependencies using pip:
+
+```
+pip install -r requirements.txt
+```
+<h3>4. Set Up Environment Variables</h3>
+Create a .env file in the root directory and add your Discord bot token:
+
+```
+BOT_TOKEN=your-discord-bot-token
+```
+<h3>5. Run the Bot</h3>
+Start the bot by running:
+
+```
+python bot.py
+```
+You should see a message in the terminal indicating that the bot is connected to Discord and ready to use.
 
 ## Support and Contact
 If you encounter any issues or have ideas for new features, please contact me (discord: mrprofessor_) or open an issue in the GitHub Issues section.

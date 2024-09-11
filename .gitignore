@@ -1,5 +1,6 @@
 /venv
 /__pycache__
+/utils/__pycache__
 
-.env
 config.json
+.database.db

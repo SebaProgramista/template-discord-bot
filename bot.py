@@ -6,6 +6,7 @@ import os
 import json
 
 from config import Config
+from utils.database_manager import SessionManager
 
 class Bot(commands.Bot):
     def __init__(self):

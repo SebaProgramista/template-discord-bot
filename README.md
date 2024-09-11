@@ -22,7 +22,9 @@ A simple, customizable template for creating a Discord bot using Python and disc
 </p>
 
 ## Features
+
 soon
+
 <!--
 Command Handling: Easy-to-use command handler for adding and managing bot commands.
 Event Handling: Simple event handler to respond to various Discord events.
@@ -33,6 +35,7 @@ Logging: Integrated logging for debugging and monitoring purposes.
 -->
 
 ## Installation
+
 <h4>1. Clone the Repository</h4>
 Clone this repository to your local machine:
 
@@ -40,6 +43,7 @@ Clone this repository to your local machine:
 git clone https://github.com/SebaProgramista/template-discord-bot
 cd template-discord-bot
 ```
+
 <h4>2. Create a Virtual Environment</h4>
 It is recommended to create a virtual environment to manage dependencies:
 
@@ -47,28 +51,36 @@ It is recommended to create a virtual environment to manage dependencies:
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 ```
+
 <h4>3. Install Dependencies</h4>
 Install the required dependencies using pip:
 
 ```
 pip install -r requirements.txt
 ```
+
 <h4>4. Set Up Environment Variables</h4>
-Create a .env file in the root directory and add your Discord bot token:
+Create a config.json file in the root directory and add your Discord bot token:
 
 ```
-BOT_TOKEN=your-discord-bot-token
+{
+  "BOT_TOKEN": "your-discord-bot-token",
+}
 ```
+
 <h4>5. Run the Bot</h4>
 Start the bot by running:
 
 ```
 python bot.py
 ```
+
 You should see a message in the terminal indicating that the bot is connected to Discord and ready to use.
 
 ## Support and Contact
-If you encounter any issues or have ideas for new features, please contact me (discord: mrprofessor_) or open an issue in the GitHub Issues section.
+
+If you encounter any issues or have ideas for new features, please contact me (discord: mrprofessor\_) or open an issue in the GitHub Issues section.
 
 ## Contribution
+
 We encourage community members to contribute to Eliora! If you have an idea for a new feature or notice a bug, feel free to open an issue or create a pull request.

@@ -24,4 +24,7 @@ class Bot(commands.Bot):
 
 bot = Bot()
 
+# Set emojis
+bot.CHANNEL = Config.get("CHANNEL", "EMOJIS")
+
 bot.run(Config.get("BOT_TOKEN"))

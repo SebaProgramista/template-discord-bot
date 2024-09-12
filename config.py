@@ -11,14 +11,20 @@ class Config:
             cls._config_data = json.load(f)
 
     @classmethod
-    def get(cls, key, default=None):
+    def get(cls, key, parent=None):
         """Get a configuration value."""
-        return cls._config_data.get(key, default)
+        if parent != None:
+            return cls._config_data[parent][key]
+        else:
+            return cls._config_data[key]
     
     @classmethod
-    def set(cls, key, value):
+    def set(cls, key, value, parent=None):
         """Set a configuration value"""
-        cls._config_data[key] = value
+        if parent != None:
+            cls._config_data[parent][key] = value
+        else:
+            cls._config_data[key] = value
         cls._save_config(cls)
 
     def _save_config(cls):

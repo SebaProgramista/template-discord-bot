@@ -7,6 +7,10 @@ import json
 
 from config import Config
 from utils.database_manager import SessionManager
+from utils.logger_manager import LoggerManager
+
+logger_manager = LoggerManager(Config.get("DEBUG_MODE"))
+logger = logger_manager.logger
 
 class Bot(commands.Bot):
     def __init__(self):
@@ -16,11 +20,13 @@ class Bot(commands.Bot):
         for i in os.listdir("cogs"):
             if i.endswith(".py"):
                 await self.load_extension(f'cogs.{i[:-3]}')
+                logger.info(f"Loaded {i[:-3]} cog")
 
         await self.tree.sync()
 
     async def on_ready(self):
-        print("Bot was started")
+        for guild in self.guilds:
+            logger.info(f"Connected to {guild.name}")
 
 bot = Bot()
 

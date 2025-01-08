@@ -20,7 +20,6 @@ class Bot(commands.Bot):
         for i in os.listdir("cogs"):
             if i.endswith(".py"):
                 await self.load_extension(f'cogs.{i[:-3]}')
-                logger.info(f"Loaded {i[:-3]} cog")
 
         await self.tree.sync()
 
@@ -29,6 +28,8 @@ class Bot(commands.Bot):
             logger.info(f"Connected to {guild.name}")
 
 bot = Bot()
+
+bot.logger = logger
 
 # Set emojis
 bot.CHANNEL = Config.get("CHANNEL", "EMOJIS")

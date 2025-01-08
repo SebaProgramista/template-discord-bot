@@ -13,6 +13,7 @@ class OnMessage(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
         self.logger = self.bot.logger
+        self.logger.info(f"Loaded {self.__class__.__name__} cog")
         
     @commands.Cog.listener()
     async def on_message(self, message: discord.Message):
